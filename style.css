@@ -22,6 +22,10 @@ body{
 }
 input{
     padding: 1rem;
-    border: none;
+    /* border: none; */
     border-radius: 10px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
 }
