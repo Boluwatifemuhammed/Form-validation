@@ -8,7 +8,7 @@ regForm.addEventListener("submit", function (e) {
     const passwordValue = passwordInput.value; 
     const repeatPasswordValue = repeatPasswordInput.value;
     
-    if
+    i
 
         
 })
