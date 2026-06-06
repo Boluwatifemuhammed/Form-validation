@@ -12,6 +12,6 @@ regForm.addEventListener("submit", function (e) {
         const errorMsg = document.createElement("p")
         errorMsg.classList.add("error-msg")
     } else{
-        
-    }
+
+    
 })
