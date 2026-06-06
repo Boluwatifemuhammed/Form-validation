@@ -11,5 +11,4 @@ regForm.addEventListener("submit", function (e) {
     if (passwordValue !== repeatPasswordValue) {
         const errorMsg = document.createElement("p")
         errorMsg.classList.add("error-msg")
-    }
 })
