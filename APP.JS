@@ -5,5 +5,5 @@ console.log(regForm, passwordInput, repeatPasswordInput);
 
 regForm.addEventListener("submit", function (e) {
     e.preventDefault();
-    const passwordValue = passwor
+    const passwordValue = pass
 })
