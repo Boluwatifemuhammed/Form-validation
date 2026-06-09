@@ -35,4 +35,5 @@ regForm.addEventListener("submit", function (e) {
         console.log("Passwords must contain letters and numbers");
         
     }
+    
 });
