@@ -1,8 +1,8 @@
 const regForm = document.getElementById("reg-form");
 const userName = document.getElementById("username");
 const email = document.getElementById("email");
-const passwordInput = document.getElementById("password");
-const repeatPasswordInput = document.getElementById("repeat-password");
+const password = document.getElementById("password");
+const repeatPassword = document.getElementById("repeat-password");
 
 console.log(regForm, passwordInput, repeatPasswordInput);
 
