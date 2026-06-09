@@ -4,7 +4,7 @@ const email = document.getElementById("email");
 const password = document.getElementById("password");
 const repeatPassword = document.getElementById("repeat-password");
 
-console.log(regForm, passwordInput, repeatPasswordInput);
+console.log(regForm, password, repeatPasswordInput);
 
 regForm.addEventListener("submit", function (e) {
     e.preventDefault();
