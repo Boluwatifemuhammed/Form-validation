@@ -9,6 +9,7 @@ console.log(regForm, password, repeatPassword);
 regForm.addEventListener("submit", function (e) {
     e.preventDefault();
     const passwordValue = password.value;
+    const passwordValue = password.value;
     const repeatPasswordValue = repeatPassword.value;
     const emailValue = email.value;
 })
