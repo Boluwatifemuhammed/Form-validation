@@ -4,10 +4,10 @@ const email = document.getElementById("email");
 const password = document.getElementById("password");
 const repeatPassword = document.getElementById("repeat-password");
 
-console.log(regForm, password, repeatPassword);
 
 regForm.addEventListener("submit", function (e) {
     e.preventDefault();
+
     const userNameValue = userName.value;
     const passwordValue = password.value;
     const repeatPasswordValue = repeatPassword.value;
@@ -15,5 +15,7 @@ regForm.addEventListener("submit", function (e) {
 
     if (userName === "") {
         console.log("username is required")
+    }else{
+        sumbit();
     }
 });
