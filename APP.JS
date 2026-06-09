@@ -13,9 +13,21 @@ regForm.addEventListener("submit", function (e) {
     const repeatPasswordValue = repeatPassword.value;
     const emailValue = email.value;
 
-    if (userName === "") {
-        console.log("username is required")
-    }else{
-        sumbit();
+    if (userNameValue === "") {
+        console.log("Username is required")
+    }
+    if (passwordValue === "") {
+        console.log("Password is required")
+    }
+    if (emailValue === "") {
+        console.log("Email is required")
+    }
+    if (repeatPasswordValue === "") {
+        console.log("Please confirm password")
+    }
+
+    if (passwordValue !== repeatPasswordValue) {
+        console.log("Passwords don't match");
+        
     }
 });
