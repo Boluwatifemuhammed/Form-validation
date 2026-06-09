@@ -19,8 +19,8 @@ regForm.addEventListener("submit", function (e) {
     if (passwordValue === "") {
         console.log("Password is required")
     }
-    if (emailValue === "") {
-        console.log("Email is required")
+    if (emailValue === "" || !emailValue.includes("@gmail.com")) {
+        console.log("Please enter a valid email")
     }
     if (repeatPasswordValue === "") {
         console.log("Please confirm password")
@@ -35,5 +35,5 @@ regForm.addEventListener("submit", function (e) {
         console.log("Passwords must contain letters and numbers");
         
     }
-    
+
 });
