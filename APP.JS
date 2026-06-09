@@ -8,8 +8,12 @@ console.log(regForm, password, repeatPassword);
 
 regForm.addEventListener("submit", function (e) {
     e.preventDefault();
-    const passwordValue = password.value;
+    const userNameValue = userName.value;
     const passwordValue = password.value;
     const repeatPasswordValue = repeatPassword.value;
     const emailValue = email.value;
-})
+
+    if (userName === "") {
+        console.log("username is required")
+    }
+});
