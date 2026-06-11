@@ -4,6 +4,7 @@ const email = document.getElementById("email");
 const password = document.getElementById("password");
 const repeatPassword = document.getElementById("repeat-password");
 
+
 function showError(input, message) {
     const formGroup = input.parentElement;
     const errorText = formGroup.querySelector(".error");
@@ -32,7 +33,7 @@ regForm.addEventListener("submit", function (e) {
     }
 
     if (passwordValue !== repeatPasswordValue) {
-        showError("Passwords don't match");
+        showError(repeatPassword, "Passwords don't match");
         
     }
     const passwordPattern  = /^(?=.*[A-Za-z])(?=.*\d).+$/;
