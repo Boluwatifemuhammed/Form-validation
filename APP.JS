@@ -38,7 +38,7 @@ regForm.addEventListener("submit", function (e) {
     }
     const passwordPattern  = /^(?=.*[A-Za-z])(?=.*\d).+$/;
     if (!passwordPattern.test(passwordValue)) {
-        console.log("Passwords must contain letters and numbers");
+        showError(password, "Passwords must contain letters and numbers");
         
     }
 
