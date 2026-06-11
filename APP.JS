@@ -6,8 +6,9 @@ const repeatPassword = document.getElementById("repeat-password");
 
 function showError(input, message) {
     const formGroup = input.parentElement;
-    const errorText = formGroup.quer
-}
+    const errorText = formGroup.querySelector(".error");
+    errorText.textContent = message;
+};
 
 regForm.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -18,20 +19,20 @@ regForm.addEventListener("submit", function (e) {
     const emailValue = email.value;
 
     if (userNameValue === "") {
-        console.log("Username is required")
+        showError(userName, "Username is required")
     }
     if (passwordValue === "") {
-        console.log("Password is required")
+        showError(password, "Password is required")
     }
     if (emailValue === "" || !emailValue.includes("@gmail.com")) {
-        console.log("Please enter a valid email")
+        showError(email, "Please enter a valid email")
     }
     if (repeatPasswordValue === "") {
-        console.log("Please confirm password")
+        showError(repeatPassword, "Please confirm password")
     }
 
     if (passwordValue !== repeatPasswordValue) {
-        console.log("Passwords don't match");
+        showError("Passwords don't match");
         
     }
     const passwordPattern  = /^(?=.*[A-Za-z])(?=.*\d).+$/;
