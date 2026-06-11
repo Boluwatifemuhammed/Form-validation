@@ -12,6 +12,15 @@ function showError(input, message) {
     errorText.textContent = message;
 };
 
+
+function showError(input, message) {
+    const formGroup = input.parentElement;
+    const errorText = formGroup.querySelector(".error");
+    errorText.textContent = message;
+};
+
+
+
 regForm.addEventListener("submit", function (e) {
     e.preventDefault();
 
