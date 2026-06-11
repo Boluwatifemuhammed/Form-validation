@@ -5,6 +5,7 @@ const password = document.getElementById("password");
 const repeatPassword = document.getElementById("repeat-password");
 
 
+
 function showError(input, message) {
     const formGroup = input.parentElement;
     const errorText = formGroup.querySelector(".error");
