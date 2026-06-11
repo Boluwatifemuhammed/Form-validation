@@ -20,11 +20,18 @@ regForm.addEventListener("submit", function (e) {
     const repeatPasswordValue = repeatPassword.value;
     const emailValue = email.value;
 
+    const passwordPattern  = /^(?=.*[A-Za-z])(?=.*\d).+$/;
+
+
     if (userNameValue === "") {
         showError(userName, "Username is required")
     }
     if (passwordValue === "") {
         showError(password, "Password is required")
+    } 
+    else if (!passwordPattern.test(passwordValue)) {
+        showError(password, "Passwords must contain letters and numbers");
+        
     }
     if (emailValue === "" || !emailValue.includes("@gmail.com")) {
         showError(email, "Please enter a valid email")
@@ -37,10 +44,6 @@ regForm.addEventListener("submit", function (e) {
         showError(repeatPassword, "Passwords don't match");
         
     }
-    const passwordPattern  = /^(?=.*[A-Za-z])(?=.*\d).+$/;
-    if (!passwordPattern.test(passwordValue)) {
-        showError(password, "Passwords must contain letters and numbers");
-        
-    }
+    
 
 });
