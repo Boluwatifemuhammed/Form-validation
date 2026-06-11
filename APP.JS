@@ -4,6 +4,9 @@ const email = document.getElementById("email");
 const password = document.getElementById("password");
 const repeatPassword = document.getElementById("repeat-password");
 
+function name(params) {
+    
+}
 
 regForm.addEventListener("submit", function (e) {
     e.preventDefault();
