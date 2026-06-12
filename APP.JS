@@ -7,16 +7,16 @@ const togglePassword = document.getElementById("togglePassword");
 
 
 function showError(input, message) {
-    const formGroup = input.parentElement;
+    const formGroup = input.closest(".form-group");
     const errorText = formGroup.querySelector(".error");
     errorText.textContent = message;
 };
 
 
 function clearError(input) {
-    const formGroup = input.parentElement;
+    const formGroup = input.closest(".form-group");
     const errorText = formGroup.querySelector(".error");
-    errorText.textContent = " ";
+    errorText.textContent = "";
 };
 
 togglePassword.addEventListener("click", function(){
@@ -40,39 +40,39 @@ regForm.addEventListener("submit", function (e) {
 
     if (userNameValue === "") {
         showError(userName, "Username is required")
-    } else(
+    } else{
         clearError(userName)
-    )
+};
 
     if (passwordValue === "") {
         showError(password, "Password is required")
     } 
     else if (!passwordPattern.test(passwordValue)) {
         showError(password, "Passwords must contain letters and numbers");
-    } else(
+    } else{
         clearError(password)
-    )
+};
 
 
-    if (emailValue === "" || !emailValue.includes("@gmail.com")) {
+    if (emailValue === "") {
         showError(email, "Please enter a valid email")
-    } else(
+    } else{
         clearError(email)
-    )
+};
 
     
     if (repeatPasswordValue === "") {
         showError(repeatPassword, "Please confirm password")
-    } else(
+    } else{
         clearError(repeatPassword)
-    )
+};
 
     if (passwordValue !== repeatPasswordValue) {
         showError(repeatPassword, "Passwords don't match");
         
-    } else(
+    } else{
         clearError(repeatPassword)
-    )
+    }
 
     
 });
