@@ -13,10 +13,10 @@ function showError(input, message) {
 };
 
 
-function showError(input, message) {
+function clearError(input) {
     const formGroup = input.parentElement;
     const errorText = formGroup.querySelector(".error");
-    errorText.textContent = message;
+    errorText.textContent = " ";
 };
 
 
@@ -34,13 +34,14 @@ regForm.addEventListener("submit", function (e) {
 
     if (userNameValue === "") {
         showError(userName, "Username is required")
-    }
+    } else(
+        clearError(password)
+    )
     if (passwordValue === "") {
         showError(password, "Password is required")
     } 
     else if (!passwordPattern.test(passwordValue)) {
         showError(password, "Passwords must contain letters and numbers");
-        
     }
     if (emailValue === "" || !emailValue.includes("@gmail.com")) {
         showError(email, "Please enter a valid email")
