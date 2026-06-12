@@ -24,12 +24,18 @@
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Password"/>
-                <small id="error" class="error"></small>
+                <div class="password-cont">
+                    <input type="text" id="password" placeholder="Password"/>
+                    <button id="togglePassword">Hide</button>
+                </div>
+              <small id="error" class="error"></small>
             </div>
             <div class="form-group">
                 <label for="repeat-password">Repeat Password</label>
-                <input type="password" id="repeat-password" placeholder="Confirm Password"/>
+                <div class="password-cont">
+                    <input type="text" id="repeat-password" placeholder="Confirm Password"/>
+                    <button id="togglePassword">Hide</button>
+                </div>
                 <small id="error" class="error"></small>
             </div>
             <button type="submit">Sign up</button>
