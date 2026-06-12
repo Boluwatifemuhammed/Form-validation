@@ -19,7 +19,7 @@ function clearError(input) {
     errorText.textContent = " ";
 };
 
-togglePassword.addEventListener("click", function{
+togglePassword.addEventListener("click", function(){
     if (password.type === "text") {
         password.type = "password";
     } else {
