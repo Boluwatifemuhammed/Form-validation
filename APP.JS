@@ -19,7 +19,9 @@ function clearError(input) {
     errorText.textContent = " ";
 };
 
-
+function showPassword(){
+    
+}
 
 regForm.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -69,5 +71,4 @@ regForm.addEventListener("submit", function (e) {
     )
 
     
-
 });
