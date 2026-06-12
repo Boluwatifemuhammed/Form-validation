@@ -3,7 +3,7 @@ const userName = document.getElementById("username");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const repeatPassword = document.getElementById("repeat-password");
-
+const togglePassword = document.getElementById("togglePassword");
 
 
 function showError(input, message) {
@@ -19,9 +19,13 @@ function clearError(input) {
     errorText.textContent = " ";
 };
 
-function showPassword(){
-    
-}
+togglePassword.addEventListener("click", function{
+    if (password.type === "text") {
+        password.type = "password";
+    } else {
+        password.type = "text"
+    }
+});
 
 regForm.addEventListener("submit", function (e) {
     e.preventDefault();
