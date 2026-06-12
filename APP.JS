@@ -35,25 +35,39 @@ regForm.addEventListener("submit", function (e) {
     if (userNameValue === "") {
         showError(userName, "Username is required")
     } else(
-        clearError(password)
+        clearError(userName)
     )
+
     if (passwordValue === "") {
         showError(password, "Password is required")
     } 
     else if (!passwordPattern.test(passwordValue)) {
         showError(password, "Passwords must contain letters and numbers");
-    }
+    } else(
+        clearError(password)
+    )
+
+
     if (emailValue === "" || !emailValue.includes("@gmail.com")) {
         showError(email, "Please enter a valid email")
-    }
+    } else(
+        clearError(email)
+    )
+
+    
     if (repeatPasswordValue === "") {
         showError(repeatPassword, "Please confirm password")
-    }
+    } else(
+        clearError(repeatPassword)
+    )
 
     if (passwordValue !== repeatPasswordValue) {
         showError(repeatPassword, "Passwords don't match");
         
-    }
+    } else(
+        clearError(repeatPassword)
+    )
+
     
 
 });
