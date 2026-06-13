@@ -6,13 +6,13 @@ const repeatPassword  = document.getElementById("repeat-password");
 
 function showError(input, message) {
     const formGroup  = input.closest(".form-group");
-    const errorMsg = formGroup.getElementById("error")
+    const errorMsg = formGroup.querySelector(".error")
     errorMsg.textContent = message;
 }
 
 function clearError(input) {
     const formGroup  = input.closest(".form-group");
-    const errorMsg = formGroup.getElementById("error");
+    const errorMsg = formGroup.querySelector(".error");
     errorMsg.textContent = "";
 }
 
@@ -24,25 +24,25 @@ Form.addEventListener("submit", function (e) {
     const emailValue = email.value;
     const repeatPasswordValue = repeatPassword.value;
 
-    if (passwordValue = "") {
+    if (passwordValue === "") {
         showError(password, "Please input a password")
     } else{
         clearError(password)
     }
 
-    if (emailValue = "") {
+    if (emailValue === "") {
         showError(email, "Please add an email")
     } else{
         clearError(email)
     }
 
-    if (repeatPasswordValue = ""){
+    if (repeatPasswordValue === ""){
         showError(repeatPassword, "Please confirm password")
     } else{
         clearError(repeatPassword)
     }
     
-    if (userNameValue = "") {
+    if (userNameValue === "") {
         showError(userName, "Please enter a username")
     } else{
         clearError(userName)
