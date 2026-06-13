@@ -12,7 +12,8 @@ function showError(input, message) {
 
 function clearError(input) {
     const formGroup  = input.closest(".form-group");
-    const errorMsg = formGroup.getElementById("")
+    const errorMsg = formGroup.getElementById("error");
+    errorMsg.textContent = "";
 }
 
 Form.addEventListener("submit", function (e) {
@@ -26,7 +27,7 @@ Form.addEventListener("submit", function (e) {
     if (passwordValue = "") {
         showError(password, "Please input a password")
     } else{
-
+        clearError(password)
     }
     
 })
