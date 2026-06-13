@@ -35,5 +35,9 @@ Form.addEventListener("submit", function (e) {
     } else{
         clearError(email)
     }
+
+    if (repeatPasswordValue = ""){
+        showError(repeatPassword, "Please confirm password")
+    } else
     
 })
