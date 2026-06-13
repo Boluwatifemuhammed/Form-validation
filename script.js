@@ -6,8 +6,13 @@ const repeatPassword  = document.getElementById("repeat-password");
 
 function showError(input, message) {
     const formGroup  = input.closest(".form-group");
-    const error = formGroup.getElementById("error")
-    error.textContent = message;
+    const errorMsg = formGroup.getElementById("error")
+    errorMsg.textContent = message;
+}
+
+function clearError(input) {
+    const formGroup  = input.closest(".form-group");
+    const errorMsg = formGroup.getElementById("")
 }
 
 Form.addEventListener("submit", function (e) {
@@ -20,6 +25,8 @@ Form.addEventListener("submit", function (e) {
 
     if (passwordValue = "") {
         showError(password, "Please input a password")
+    } else{
+
     }
     
 })
