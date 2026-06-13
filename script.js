@@ -42,4 +42,7 @@ Form.addEventListener("submit", function (e) {
         clearError(repeatPassword)
     }
     
+    if (userNameValue = "") {
+        showError(userName, "Please enter ")
+    }
 })
