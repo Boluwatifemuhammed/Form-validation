@@ -45,6 +45,6 @@ Form.addEventListener("submit", function (e) {
     if (userNameValue = "") {
         showError(userName, "Please enter a username")
     } else{
-        clearError
+        clearError(userName)
     }
 })
