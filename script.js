@@ -29,5 +29,11 @@ Form.addEventListener("submit", function (e) {
     } else{
         clearError(password)
     }
+
+    if (emailValue = "") {
+        showError(email, "Please add an email")
+    } else{
+        clearError(email)
+    }
     
 })
