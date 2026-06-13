@@ -9,7 +9,7 @@ Form.addEventListener("submit", function (e) {
     
     const passwordValue = password.value;
     const userNameValue = userName.value;
-    const passwordValue = password.value;
-    const passwordValue = password.value;
+    const emailValue = email.value;
+    const repeatPasswordValue = repeatPassword.value;
     
 })
