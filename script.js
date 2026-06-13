@@ -38,6 +38,8 @@ Form.addEventListener("submit", function (e) {
 
     if (repeatPasswordValue = ""){
         showError(repeatPassword, "Please confirm password")
-    } else
+    } else{
+        clearError(repeatPassword)
+    }
     
 })
