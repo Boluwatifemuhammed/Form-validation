@@ -4,6 +4,10 @@ const userName  = document.getElementById("username");
 const email  = document.getElementById("email");
 const repeatPassword  = document.getElementById("repeat-password");
 
+function showError(input, message) {
+    const formGroup  = input.closest(".form-group")
+}
+
 Form.addEventListener("submit", function (e) {
     e.preventDefault();
     
@@ -11,5 +15,9 @@ Form.addEventListener("submit", function (e) {
     const userNameValue = userName.value;
     const emailValue = email.value;
     const repeatPasswordValue = repeatPassword.value;
+
+    if (passwordValue = "") {
+        
+    }
     
 })
