@@ -39,10 +39,21 @@ input{
     border-radius: 10px;
     padding: 10px;
     border: 1px solid rgb(85, 85, 85);
-    margin-top: 1rem;
 
 }
 
 .form-group{
+    margin-top: 1.5rem;
+}
 
+#togglePassword{
+    padding: 0.7rem;
+    color: white;
+    background-color: #036ed8;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.password-cont{
+    row-gap: 70px;
 }
