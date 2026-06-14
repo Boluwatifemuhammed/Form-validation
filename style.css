@@ -54,6 +54,6 @@ input{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.password-cont{
-    
+.password-cont input{
+    border-left: none;
 }
