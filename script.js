@@ -49,6 +49,6 @@ Form.addEventListener("submit", function (e) {
     }
 
     if (passwordValue !== repeatPasswordValue) {
-        showError(repeatPasswordValue)
+        showError(repeatPasswordValue, "")
     }
 })
