@@ -47,4 +47,8 @@ Form.addEventListener("submit", function (e) {
     } else{
         clearError(userName)
     }
+
+    if (condition) {
+        
+    }
 })
