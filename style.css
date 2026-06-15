@@ -63,5 +63,5 @@ input{
 .passwords-cont{
     display: flex;
     flex-direction: row;
-    gap: ;
+    gap: 7px;
 }
