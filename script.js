@@ -50,8 +50,8 @@ Form.addEventListener("submit", function (e) {
     }
 
     if (passwordValue !== repeatPasswordValue) {
-        showError(repeatPasswordValue, "Passwords don't match")
+        showError(repeatPassword, "Passwords don't match")
     } else{
-        clearError(repeatPasswordValue)
+        clearError(repeatPassword)
     }
 })
