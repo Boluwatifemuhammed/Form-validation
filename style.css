@@ -24,7 +24,7 @@ h1{
 }
 #error{
     color: red;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .form-group{
