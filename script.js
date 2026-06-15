@@ -48,7 +48,7 @@ Form.addEventListener("submit", function (e) {
         clearError(userName)
     }
 
-    if (passwordValue) {
+    if (passwordValue !== repeatPasswordValue) {
         
     }
 })
