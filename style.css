@@ -3,9 +3,7 @@
   padding: 0;
   font-family: 'poppins';
 }
-text{
-    color: red;
-}
+
 body{
     min-height: 100vh;
     justify-content: center;
@@ -57,7 +55,7 @@ input{
 #togglePassword{
     padding: 0.7rem;
     color: white;
-    background-color: #F6921E;
+    background-color: #333333;
     border: none;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -76,5 +74,6 @@ input{
     border: none;
     margin-top: 1.5rem;
     background: linear-gradient(to right, #333333, #F6921E);
+    cursor: pointer;
 
 }
