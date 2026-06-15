@@ -60,6 +60,6 @@ input{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.password-cont input{
-    
+.passwords-cont{
+    display: flex;
 }
