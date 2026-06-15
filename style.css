@@ -62,4 +62,6 @@ input{
 }
 .passwords-cont{
     display: flex;
+    flex-direction: row;
+    gap: ;
 }
