@@ -10,6 +10,7 @@ function showError(input, message) {
     errorMsg.textContent = message;
 }
 
+
 function clearError(input) {
     const formGroup  = input.closest(".form-group");
     const errorMsg = formGroup.querySelector(".error");
