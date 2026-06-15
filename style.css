@@ -3,12 +3,15 @@
   padding: 0;
   font-family: 'poppins';
 }
+text{
+    color: red;
+}
 body{
     min-height: 100vh;
     justify-content: center;
     align-items: center;
     display: flex;
-    background: linear-gradient(to bottom, rgb(53, 122, 240),rgb(55, 55, 243));
+    background: linear-gradient(to bottom, #F6921E,#333333);
 }
 .cont{
     padding: 40px;
@@ -54,7 +57,7 @@ input{
 #togglePassword{
     padding: 0.7rem;
     color: white;
-    background-color: #036ed8;
+    background-color: #F6921E;
     border: none;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -71,6 +74,7 @@ input{
     border-radius: 10px;
     color: white;
     border: none;
-    margin-top: 15px;
-    background-color: #034ac4;
+    margin-top: 1.5rem;
+    background: linear-gradient(to right, #333333, #F6921E);
+
 }
