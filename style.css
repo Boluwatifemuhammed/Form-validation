@@ -78,3 +78,10 @@ input{
     cursor: pointer;
 
 }
+
+@media (max-width:760px) {
+    .passwords-cont{
+        flex-direction: column ;
+    }
+    
+}
