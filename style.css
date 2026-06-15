@@ -83,5 +83,9 @@ input{
     .passwords-cont{
         flex-direction: column ;
     }
+
+    #password, #repeat-password{
+        
+    }
     
 }
