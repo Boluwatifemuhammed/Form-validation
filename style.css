@@ -37,6 +37,7 @@ h1{
     display: flex;
     margin-top: 1.5rem;
     flex-direction: column;
+    
 }
 label{
     font-size: 0.9rem;
