@@ -15,13 +15,16 @@ body{
     padding: 40px;
     background-color: #fff;
     border-radius: 1rem;
-    min-width: 30rem;
+    max-width: 650px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 
 }
 
 h1{
     text-align: center;
     font-weight: 500;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
 }
 #error{
     color: red;
@@ -34,13 +37,19 @@ h1{
     flex-direction: column;
 }
 label{
-    font-size: small;
+    font-size: 0.9rem;
     font-weight: 300;
 }
 input{
     border-radius: 10px;
     padding: 10px;
+    width: 100%;
     border: 1px solid rgb(85, 85, 85);
+}
+
+input:focus{
+    border: 2px solid #F6921E;
+    outline: none;
 }
 
 #password, #repeat-password{
@@ -69,23 +78,24 @@ input{
 
 .submit-btn{
     width: 100%;
-    padding: 10px;
+    padding: 13px 28px;
     border-radius: 10px;
     color: white;
     border: none;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     background: linear-gradient(to right, #333333, #F6921E);
     cursor: pointer;
 
 }
+
 
 @media (max-width:760px) {
     .passwords-cont{
         flex-direction: column ;
     }
 
-    #password, #repeat-password{
-        
+
+    .form-group{
     }
     
 }
