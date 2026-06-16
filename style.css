@@ -11,6 +11,7 @@ body{
     display: flex;
     background: linear-gradient(to bottom, #F6921E,#333333);
 }
+
 .cont{
     padding: 40px;
     background-color: #fff;
